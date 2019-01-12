@@ -19,8 +19,6 @@ namespace ProjetoGrillo
 
         public Conta AbrirConta(Cliente cliente)
         {
-            if (cliente.MaiorDeIdade() == false)
-                throw new Exception("Apenas pessoas maiores de 18 anos podem abrir conta");
             var numeroConta = Contas.Count + 1;
 
             var conta = new Conta(Enums.TipoConta.Corrente, 1, numeroConta, this);

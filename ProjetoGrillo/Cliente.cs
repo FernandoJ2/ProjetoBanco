@@ -19,12 +19,5 @@ namespace ProjetoGrillo
             Endereco = endereco;
         }
 
-        public bool MaiorDeIdade()
-        {
-            var nascimentoMinimo = DateTime.Now.AddYears(-18);
-            var maiorDeIdade = DataDeNascimento <= nascimentoMinimo;
-
-            return maiorDeIdade;
-        }
     }
 }
